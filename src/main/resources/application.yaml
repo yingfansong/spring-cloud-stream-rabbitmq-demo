@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-cloud-stream-rabbitmq-demo
+  rabbitmq:
+    host: 101.200.86.138
+    virtual-host: admin_vhost
+    port: 5672
+    username: root
+    password: devops666
+  cloud:
+    stream:
+      bindings:
+        ss007AutoConsumer-in-0:
+          destination: ss007-auto-topic
+          group: ss007-group
+
+
+
+
+
+
+
+
